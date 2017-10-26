@@ -1,0 +1,32 @@
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+}
+
+h1 {
+  padding-left: 20px;
+}
+
+.hide {
+  height: 0px;
+  color: transparent;
+}
+
+
+#user, .chartlist{
+  margin: 0 auto;
+  width: 50%;
+}
+
+#user1-container, #user2-container, #submit, #top-artists1, #top-artists2{
+  display: inline-block;
+}
+
+#user1-container, #user2-container, #top-artists1, #top-artists2 {
+  width: 45%;
+}
+
+#submit {
+  width: auto;
+}

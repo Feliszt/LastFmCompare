@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Compare LastFM users</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Compare 2 Last.fm users</h1>
+    </header>
+    <div id="inputForm">
+      <div id="user1-container">
+        <div id="user">
+          <p>
+          User 1 :<br/>
+          <input id="userName1" value="">
+          </p>
+        </div>
+      </div>
+      <div id="user2-container">
+          <div id="user">
+          <p>
+          User 2 :<br/>
+          <input id="userName2" value="">
+          </p>
+        </div>
+      </div>
+      <button id="submit" onclick="callApi()">Submit</button>
+    </div>
+
+    <section id="top-artists">
+      <div id="top-artists1">
+        <div id="userInfo"></div>
+        <table class="chartlist" id="top-artists-table1">
+          <thead class="hide">
+            <tr>
+              <th>Rank</th>
+              <th>Avatar</th>
+              <th>Artist Name</th>
+              <th>Scrobbles</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="top-artists2">
+        <div id="userInfo"></div>
+        <table class="chartlist" id="top-artists-table2">
+          <thead class="hide">
+            <tr>
+              <th>Rank</th>
+              <th>Avatar</th>
+              <th>Artist Name</th>
+              <th>Scrobbles</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="LastFmApiKey.js"></script>
+  <script src="fetchData.js"></script>
+</html>
